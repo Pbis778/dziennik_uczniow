@@ -17,8 +17,8 @@ public:
 
     QString getStudentName() const;
     QString getStudentSurname() const;
-    double getGrade1() const;
-    double getGrade2() const;
+    int getGrade1() const;
+    int getGrade2() const;
 
 private:
     Ui::AddNewStudent *ui;

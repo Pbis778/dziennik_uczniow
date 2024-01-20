@@ -5,6 +5,8 @@
 #include <QListWidget>
 #include <QLabel>
 #include <QPushButton>
+#include <QMessageBox>
+#include <QPixmap>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

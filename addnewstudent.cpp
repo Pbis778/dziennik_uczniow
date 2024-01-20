@@ -11,27 +11,24 @@ AddNewStudent::AddNewStudent(QWidget *parent) :
     connect(ui->cancelButton, &QPushButton::clicked, this, &AddNewStudent::reject);
 }
 
-AddNewStudent::~AddNewStudent()
-{
+AddNewStudent::~AddNewStudent() {
     delete ui;
 }
 
-QString AddNewStudent::getStudentName() const
-{
+QString AddNewStudent::getStudentName() const {
     return ui->nameLineEdit->text();
 }
 
-QString AddNewStudent::getStudentSurname() const
-{
+QString AddNewStudent::getStudentSurname() const {
     return ui->surnameLineEdit->text();
 }
 
-double AddNewStudent::getGrade1() const
-{
-    return ui->grade1SpinBox->value();
+int AddNewStudent::getGrade1() const {
+    int grade = ui->grade1SpinBox->value();
+    return (grade >= 1 && grade <= 6) ? grade : 1;
 }
 
-double AddNewStudent::getGrade2() const
-{
-    return ui->grade2SpinBox->value();
+int AddNewStudent::getGrade2() const {
+    int grade = ui->grade2SpinBox->value();
+    return (grade >= 1 && grade <= 6) ? grade : 1;
 }
