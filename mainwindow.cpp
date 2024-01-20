@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "addnewstudent.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -26,5 +27,14 @@ void MainWindow::calculateAverages() {
 }
 
 void MainWindow::addStudentButton_clicked() {
+    AddNewStudent addNewStudent;
 
+    if (addNewStudent.exec() == QDialog::Accepted) {
+        QString studentInfo = QString("%1 %2 - Oceny: %3, %4")
+                                  .arg(addNewStudent.getStudentName())
+                                  .arg(addNewStudent.getStudentSurname())
+                                  .arg(addNewStudent.getGrade1())
+                                  .arg(addNewStudent.getGrade2());
+        listWidget->addItem(studentInfo);
+    }
 }

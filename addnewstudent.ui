@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>AddStudentDialog</class>
- <widget class="QDialog" name="AddStudentDialog">
+ <class>AddNewStudent</class>
+ <widget class="QDialog" name="AddNewStudent">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>612</width>
-    <height>603</height>
+    <width>590</width>
+    <height>582</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -79,7 +79,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>0</x>
