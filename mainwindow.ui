@@ -27,8 +27,8 @@
    <widget class="QLabel" name="schoolLogoLabel">
     <property name="geometry">
      <rect>
-      <x>890</x>
-      <y>10</y>
+      <x>790</x>
+      <y>80</y>
       <width>391</width>
       <height>301</height>
      </rect>
