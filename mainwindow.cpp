@@ -13,8 +13,7 @@ MainWindow::MainWindow(QWidget *parent)
     calculateButton = ui->calculateButton;
     addStudentButton = ui->addStudentButton;
 
-    QPixmap schoolLogo("C:/Users/pbist/OneDrive/Pulpit/przyk_kolT0B/dziennik_uczniow/logo.png"
-);
+    QPixmap schoolLogo("C:/Users/pbist/OneDrive/Pulpit/przyk_kolT0B/dziennik_uczniow/logo.png");
     if (schoolLogo.isNull()) {
         qDebug() << "Błąd ładowania pliku zasobu logo.png";
     } else {
